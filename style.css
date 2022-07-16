@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box; 
+}
+
+html, body {
+	background-color: #fff;
+	color: black;
+	margin: 0; 
+	padding: 0; 
+}
+nav {
+	
+}
+nav ul {
+	list-style-type: none;
+	text-align: right;
+	padding-top: 0.5em;
+	padding-right: 10em;
+}
+nav li { 
+	display: inline;
+	padding-right: 3.5em;
+	word-spacing: 2px;
+}
+nav a { 
+	text-decoration: none; 
+
+}
+#logo { 
+	position: absolute; 
+	top: 0; 
+	margin-left: 15em;
+}
+.hero-h1 {
+	margin-left: 7em; 
+	padding-top: 5em;
+}
+.white-container {
+	height: 65em;
+}
+.swamp-container {
+	background-color: #001423;
+	height: 50em;
+}
