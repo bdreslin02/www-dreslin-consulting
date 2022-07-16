@@ -4,18 +4,22 @@
 
 html, body {
 	background-color: #fff;
-	color: black;
+	color: #001423;
 	margin: 0; 
 	padding: 0; 
 }
 nav {
-	
+	height: 7em; 
+	background-color: black; 
 }
 nav ul {
+	margin-top: 0; 
+	padding-top: 2.7em;
+	padding-right: 10em;
 	list-style-type: none;
 	text-align: right;
-	padding-top: 0.5em;
-	padding-right: 10em;
+	font-family: 'Roboto', sans-serif;
+
 }
 nav li { 
 	display: inline;
@@ -26,10 +30,17 @@ nav a {
 	text-decoration: none; 
 
 }
+h1 { 
+	font-family: 'Roboto Serif', serif;
+	font-size: 3em;
+}
 #logo { 
 	position: absolute; 
-	top: 0; 
-	margin-left: 15em;
+	top: 1.2em; 
+	margin-left: 3em;
+}
+.center {
+	text-align: center;
 }
 .hero-h1 {
 	margin-left: 7em; 
@@ -41,4 +52,11 @@ nav a {
 .swamp-container {
 	background-color: #001423;
 	height: 50em;
+}
+.ice-blue-container { 
+	background-color: #d7e0e5;
+	height: 50em;
+}
+footer {
+	background-color: #fff;
 }
