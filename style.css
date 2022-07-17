@@ -33,7 +33,17 @@ nav li {
 }
 nav a { 
 	text-decoration: none; 
+	border-bottom: 2px solid transparent;
 
+}
+nav a:hover {
+	border-bottom: 2px solid #c4c4c4;
+}
+nav a:active {
+	border-bottom: 2px solid #c4c4c4;
+}
+nav a.current {
+	border-bottom: 2px solid #c4c4c4;
 }
 /* Text styles */
 h1 { 
@@ -62,8 +72,8 @@ h1 {
 /* Scroll down button */
 .scroll-down {
 	opacity: 1;
-	-webkit-transition: all .5s ease-in 3s;
-	transition: all .5s ease-in 3s;
+	-webkit-transition: all 0.5s ease-in 3s;
+	transition: all 0.5s ease-in 5s;
 }
 .scroll-down {
 	position: absolute;
@@ -85,13 +95,12 @@ h1 {
 	  left: calc(50% - 6px);
 	  transform: rotate(-45deg);
 	  display: block;
-	  width: 12px;
-	  height: 12px;
+	  width: 14px;
+	  height: 14px;
 	  content: "";
-	  border: 2px solid black;
+	  border: 3px solid #001423;
 	  border-width: 0px 0 2px 2px;
 }
-  
 @keyframes bounce {
 	0%,
 	100%,
@@ -148,16 +157,17 @@ h1 {
 	background-color: #001423;
 	color: white; 
 	height: 70em;
-	padding-top: 5em;
+	padding-top: 3em;
 }
 .swamp-container h2, p {
 	width: 100%;
 	text-align: center;
-	border: 3px solid white;
+	/* border: 3px solid white; */
 }
 .swamp-p {
 	text-align: left;
 	font-size: 1.3em;
+	line-height: 1.5em;
 }
 .swamp-flex {
 	display: flex;
@@ -170,15 +180,15 @@ h1 {
 }
 .swamp-child-left {
 	flex: 50%; 
-	padding-left: 1em;
-	padding-right: 7em;
+	padding-left: 2em;
+	padding-right: 6em;
 	text-align: center;
 	/* border: 3px solid white; */
 }
 .swamp-child-right {
 	flex: 50%; 
-	padding-left: 7em;
-	padding-right: 1em;
+	padding-left: 6em;
+	padding-right: 2em;
 	text-align: center;
 	/* border: 3px solid white; */
 }
@@ -205,6 +215,20 @@ footer {
 		.paragraph {
 			margin-left: 1em;
 			margin-right: 1em;
+		}
+		.swamp-flex {
+			padding: 0;
+		}
+		.swamp-child-left, 
+		.swamp-child-right {
+			flex: 100%; 
+			padding-left: 3em;
+			padding-right: 3em;
+		}
+		.swamp-p {
+			text-align: left;
+			font-size: 1.1em;
+			line-height: 1em;
 		}
 	}
 @media only screen 
