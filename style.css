@@ -1,3 +1,4 @@
+/* Global styling */
 * {
 	box-sizing: border-box; 
 }
@@ -7,19 +8,23 @@ html, body {
 	color: #001423;
 	margin: 0; 
 	padding: 0; 
+	font-family: 'Roboto', sans-serif;
+	scroll-behavior: smooth;
 }
+/* Navigation element */
 nav {
 	height: 7em; 
-	background-color: black; 
+	/* background-color: black; */
 }
 nav ul {
 	margin-top: 0; 
-	padding-top: 2.7em;
+	padding-top: 2em;
 	padding-right: 10em;
 	list-style-type: none;
 	text-align: right;
 	font-family: 'Roboto', sans-serif;
-
+	font-size: 1.3em;
+	font-weight: lighter;
 }
 nav li { 
 	display: inline;
@@ -30,14 +35,22 @@ nav a {
 	text-decoration: none; 
 
 }
+/* Text styles */
 h1 { 
 	font-family: 'Roboto Serif', serif;
-	font-size: 3em;
+	font-size: 4em;
+}
+.paragraph {
+	display: block;
+	margin-left: 30em;
+	margin-right: 30em;
+	font-size: 1.4em;
+	line-height: 1.9em;
 }
 #logo { 
 	position: absolute; 
-	top: 1.2em; 
-	margin-left: 3em;
+	top: 1.25em; 
+	margin-left: 5em;
 }
 .center {
 	text-align: center;
@@ -46,17 +59,173 @@ h1 {
 	margin-left: 7em; 
 	padding-top: 5em;
 }
+/* Scroll down button */
+.scroll-down {
+	opacity: 1;
+	-webkit-transition: all .5s ease-in 3s;
+	transition: all .5s ease-in 3s;
+}
+.scroll-down {
+	position: absolute;
+	bottom: 0.5em;
+	left: 50%;
+	margin-left: -12px;
+	display: block;
+	width: 32px;
+	height: 32px;
+	z-index: 2;
+	-webkit-animation: bounce 2s infinite 2s;
+	animation: bounce 2s infinite 2s;
+	-webkit-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}
+.scroll-down:before {
+	  position: absolute;
+	  top: calc(50% - 8px);
+	  left: calc(50% - 6px);
+	  transform: rotate(-45deg);
+	  display: block;
+	  width: 12px;
+	  height: 12px;
+	  content: "";
+	  border: 2px solid black;
+	  border-width: 0px 0 2px 2px;
+}
+  
+@keyframes bounce {
+	0%,
+	100%,
+	20%,
+	50%,
+	80% {
+	  -webkit-transform: translateY(0);
+	  -ms-transform: translateY(0);
+	  transform: translateY(0);
+	}
+	40% {
+	  -webkit-transform: translateY(-10px);
+	  -ms-transform: translateY(-10px);
+	  transform: translateY(-10px);
+	}
+	60% {
+	  -webkit-transform: translateY(-5px);
+	  -ms-transform: translateY(-5px);
+	  transform: translateY(-5px);
+	}
+}
+/* White (#fff) div container elements */
 .white-container {
-	height: 65em;
+	height: 70em;
 }
-.swamp-container {
-	background-color: #001423;
-	height: 50em;
-}
+/* Ice blue (#d7e0e5) div container elements */
 .ice-blue-container { 
 	background-color: #d7e0e5;
 	height: 50em;
 }
+/* Landing flexbox div elements */
+.landing-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	/* Container border used to view and reposition children */
+	/* border: 3px solid black; */
+}
+.landing-child {
+	height: 500px;
+	width: 700px;
+	margin-top: 1em;
+	padding: 1em;
+	/* border: 3px solid black; */
+	font-size: 1.4em;
+	line-height: 1.9em;
+}
+.landing-child p {
+	text-align: left;
+}
+/* Swamp (#001423) flexbox container elements */
+#swamp-container {
+	background-color: #001423;
+	color: white; 
+	height: 70em;
+	padding-top: 5em;
+}
+.swamp-container h2, p {
+	width: 100%;
+	text-align: center;
+	border: 3px solid white;
+}
+.swamp-p {
+	text-align: left;
+	font-size: 1.3em;
+}
+.swamp-flex {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	padding: 2em 6em 8em;
+}
+.swamp-center {
+	width: 100%;
+}
+.swamp-child-left {
+	flex: 50%; 
+	padding-left: 1em;
+	padding-right: 7em;
+	text-align: center;
+	/* border: 3px solid white; */
+}
+.swamp-child-right {
+	flex: 50%; 
+	padding-left: 7em;
+	padding-right: 1em;
+	text-align: center;
+	/* border: 3px solid white; */
+}
+.padding-top {
+	padding-top: 6em;
+}
+/* Font Awesome icon styles */
+.fa-white{
+	color: white;
+	font-size: 5em; 
+}
+/* Footer */
 footer {
+	height: 8em; 
 	background-color: #fff;
 }
+/* Media queries */
+@media only screen 
+	and (min-width: 300px)
+	and (max-width: 600px) {
+		.white-container {
+			height: 75em;
+		}
+		.paragraph {
+			margin-left: 1em;
+			margin-right: 1em;
+		}
+	}
+@media only screen 
+	and (min-width: 601px)
+	and (max-width: 1024px) {
+		.white-container {
+			height: 72em;
+		}
+		.paragraph {
+			margin-left: 5em;
+			margin-right: 5em; 
+		}
+	}
+@media only screen 
+	and (min-width: 1025px)
+	and (max-width: 1400px) {
+		.white-container {
+			height: 53em;
+		}
+		.paragraph {
+			margin-left: 7em;
+			margin-right: 7em;
+		}
+	}
