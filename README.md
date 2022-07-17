@@ -22,7 +22,7 @@ All content ideas, elements, structure, and implementation are licensed under th
 - Nav, H2, H3, P: [Roboto, sans-serif](https://fonts.google.com/specimen/Roboto+Serif)
 ### Icons
 ***
-All social media icons courtesy of [Font Awesome Icons](https://fontawesome.com/)
+All icons courtesy of [Font Awesome Icons](https://fontawesome.com/)
 - [Code Solid](https://fontawesome.com/icons/code?s=solid)
     - Color: #fff
 - [Desktop Solid](https://fontawesome.com/icons/desktop?s=solid)
