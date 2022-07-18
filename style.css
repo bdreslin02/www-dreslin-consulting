@@ -96,14 +96,16 @@ h1 {
 	margin-left: 7em; 
 	padding-top: 5em;
 }
-.reveal{
+.cover {
+	object-fit: cover;
+}
+.reveal {
 	position: relative;
 	transform: translateY(150px);
 	opacity: 0;
 	transition: 1s all ease;
 }
-  
-.reveal.active{
+.reveal.active {
 	transform: translateY(0);
 	opacity: 1;
 }
@@ -172,7 +174,6 @@ h1 {
 .landing-container {
 	display: flex;
 	flex-direction: column;
-	
 	width: 100%;
 	margin-top: -7em;
 	/* Container border used to view and reposition children */
@@ -310,7 +311,7 @@ h1 {
 	padding: 0.1em 0.35em;
 	color: #001423;
 	font-size: 5em;
-	/* border: 3px solid black; */
+	border: 3px solid black;
 }
 .staff-card {
 	min-height: 450px;
@@ -373,12 +374,41 @@ footer {
 @media only screen 
 	and (min-width: 300px)
 	and (max-width: 600px) {
-		.white-container {
-			height: 75em;
+		h1 {
+			font-size: 2.5em;
 		}
 		.paragraph {
 			margin-left: 1em;
 			margin-right: 1em;
+		}
+		.landing-container {
+			margin-top: -17em;
+		}
+		.landing-child {
+			height: 500px;
+			width: 400px;
+			margin-left: 1em;
+			line-height: 1.6em;
+		}
+		.scroll-down {
+			bottom: -25em;
+		}
+		.white-container {
+			height: 100em;
+		}
+		.white-container-h1 {
+			font-size: 2.5em;
+			
+		}
+		.staff-card {
+			min-height: 350px;
+			max-height: 350px;
+		}
+		.image {
+			height: 90px;
+			width: 85px;
+			top: -70%;
+			left: 50%;
 		}
 		.swamp-flex {
 			padding: 0;
@@ -391,8 +421,36 @@ footer {
 		}
 		.swamp-p {
 			text-align: left;
-			font-size: 1.1em;
+			font-size: 1em;
 			line-height: 1em;
+		}
+		.ice-blue-flex {
+			padding: 0;
+		}
+		.ice-blue-child-left, 
+		.ice-blue-child-right {
+			flex: 100%;
+		}
+		.ice-blue-container h1 {
+			text-align: left;
+			font-size: 2em;
+			margin: 0;
+			padding: 0;
+		}
+		.img-resize {
+			max-width: 100%;
+			height: auto;
+			width: auto;
+		}
+		.fa-white {
+			font-size: 2em;
+		}
+		.fa-swamp {
+			width: 100%;
+			margin: 0 1.7em;
+			padding: auto;
+			color: #001423;
+			font-size: 5em;
 		}
 	}
 @media only screen 
