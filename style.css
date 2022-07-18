@@ -172,6 +172,7 @@ h1 {
 .landing-container {
 	display: flex;
 	flex-direction: column;
+	
 	width: 100%;
 	margin-top: -7em;
 	/* Container border used to view and reposition children */
@@ -195,6 +196,10 @@ h1 {
 	justify-content: center;
 	align-items: center;
 }
+.white-container-h1 {
+	text-align: center;
+	font-weight: 400;
+}
 .white-flex {
 	display: flex;
 	flex-wrap: wrap;
@@ -217,6 +222,12 @@ h1 {
 	color: white; 
 	height: 70em;
 	padding-top: 3em;
+}
+.swamp-container-h1 {
+	text-align: center;
+	font-family: 'Roboto Serif', serif;
+	font-size: 1.5em;
+	font-weight: 400;
 }
 .swamp-container h2, p {
 	width: 100%;
