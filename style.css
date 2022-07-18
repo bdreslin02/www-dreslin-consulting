@@ -96,6 +96,25 @@ h1 {
 	margin-left: 7em; 
 	padding-top: 5em;
 }
+.reveal{
+	position: relative;
+	transform: translateY(150px);
+	opacity: 0;
+	transition: 1s all ease;
+}
+  
+.reveal.active{
+	transform: translateY(0);
+	opacity: 1;
+}
+@keyframes slideUpBottom {
+	0% {
+		transform: translateY(3%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
 /* Scroll down button */
 .scroll-down {
 	opacity: 1;
