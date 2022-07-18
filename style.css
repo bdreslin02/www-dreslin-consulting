@@ -398,7 +398,6 @@ footer {
 		}
 		.white-container-h1 {
 			font-size: 2.5em;
-			
 		}
 		.staff-card {
 			min-height: 350px;
@@ -455,17 +454,70 @@ footer {
 	}
 @media only screen 
 	and (min-width: 601px)
-	and (max-width: 1024px) {
+	and (max-width: 1180px) {
+		.scroll-down {
+			bottom: 10em;
+		}
 		.white-container {
-			height: 72em;
+			height: 100em;
+		}
+		.white-container-h1 {
+			font-size: 2.5em;
+		}
+		.staff-card {
+			min-height: 425px;
+			max-height: 425px;
+		}
+		.image {
+			height: 100px;
+			width: 95px;
+			top: -50%;
+			left: 50%;
 		}
 		.paragraph {
 			margin-left: 5em;
 			margin-right: 5em; 
 		}
+		.swamp-child-left, 
+		.swamp-child-right { 
+			padding: 2em 2em;
+		}
+		.swamp-p {
+			font-size: 1em;
+			line-height: 1.3em;
+		}
+		.ice-blue-flex {
+			padding: 0;
+		}
+		.ice-blue-child-left, 
+		.ice-blue-child-right {
+			flex: 100%;
+		}
+		.ice-blue-container h1 {
+			text-align: left;
+			font-size: 2em;
+			margin: 0;
+			padding: 0;
+		}
+		.img-resize {
+			max-width: 75%;
+			height: auto;
+			width: auto;
+		}
+		.fa-white {
+			padding-bottom: 0.5em;
+			font-size: 3em;
+			padding-right: 0.7em;
+		}
+		.fa-swamp {
+			margin-bottom: 2em;
+			margin-left: 0.3em;
+			padding: 0 1em;
+		}
+		
 	}
 @media only screen 
-	and (min-width: 1025px)
+	and (min-width: 1181px)
 	and (max-width: 1400px) {
 		.white-container {
 			height: 53em;
