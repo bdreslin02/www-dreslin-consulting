@@ -226,8 +226,8 @@ h1 {
 .swamp-container-h1 {
 	text-align: center;
 	font-family: 'Roboto Serif', serif;
-	font-size: 1.5em;
-	font-weight: 400;
+	font-size: 1.7em;
+	font-weight: 200;
 }
 .swamp-container h2, p {
 	width: 100%;
@@ -313,7 +313,8 @@ h1 {
 	/* border: 3px solid black; */
 }
 .staff-card {
-	max-height: 500px;
+	min-height: 450px;
+	max-height: 450px;
 	width: 350px;
 	background-color: white;
 	border-radius: 10px;
