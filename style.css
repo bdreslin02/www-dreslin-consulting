@@ -1,14 +1,100 @@
+/* Custom properties */
+:root {
+	--clr-neutral-100: #fff;
+	--clr-primary-300: #d7e0e5; 
+	--clr-primary-900: #001423;
+
+	--ff-heading: 'Roboto Serif', serif; 
+	--ff-body: 'Roboto', serif;
+
+	--fs-h1: 3rem; 
+	--fs-h2: 1.5rem; 
+}
 /* Global styling */
-* {
+*, 
+*::before, 
+*::after {
 	box-sizing: border-box; 
 	margin: 0; 
 	padding: 0; 
 }
+body {
+	font-family: var(--ff-body);
+	font-weight: 400;
+	font-size: 1.3125rem;
+	line-height: 1.6;
+}
 html, body {
 	background-color: #fff;
-	color: #001423;
 	font-family: 'Roboto', sans-serif;
 	scroll-behavior: smooth;
+}
+body, 
+h1, 
+h2, 
+h3, 
+p {
+	margin: 0;
+}
+h1, 
+h2, 
+h3 {
+	font-family: var(--ff-heading);
+	line-height: 1;
+}
+h1,
+h2, 
+h3, 
+p {
+	margin-bottom: 1em;
+}
+h1 {
+	font-size: var(--fs-h1)
+}
+h2 {
+	font-size: var(--fs-h2)
+}
+.text-center {
+	text-align: center;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+section {
+	padding: 3rem 0; 
+}
+.container {
+	margin-inline: auto;
+	width: min(90%, 70.5rem);
+	border: 3px solid green; 
+}
+.split {
+	display: flex;
+	flex-direction: column;
+}
+.container--padding {
+	padding-top: 5em;
+}
+.container--align {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	flex-shrink: 0;
+	border: 3px solid green; 
+}
+.bg-light {
+	background-color: var(--clr-neutral-100);
+	color: var(--clr-primary-900)
+}
+.bg-dark {
+	background-color: var(--clr-primary-900);
+	color: var(--clr-neutral-100);
+}
+.bg-accent {
+	background-color: var(--clr-primary-300);
+	color: var(--clr-primary-900)
 }
 /* Navigation element */
 header {
@@ -20,7 +106,7 @@ header {
 }
 .navbar {
 	width: 100%;
-	min-height: 7em;
+	min-height: 6em;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -45,8 +131,7 @@ header {
 }
 nav li {
 	list-style: none;
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.3em;
+	font-size: 1.2rem;
 	font-weight: lighter;
 }
 nav a { 
@@ -97,11 +182,7 @@ nav a.current {
 	white-space: nowrap;
 }
 /* Text styles */
-h1 { 
-	font-family: 'Roboto Serif', serif;
-	font-size: 4em;
-}
-.paragraph {
+/* .paragraph {
 	display: block;
 	margin-left: 30em;
 	margin-right: 30em;
@@ -122,7 +203,7 @@ h1 {
 }
 .cover {
 	object-fit: cover;
-}
+} */
 .reveal {
 	position: relative;
 	transform: translateY(150px);
@@ -142,7 +223,7 @@ h1 {
 	}
 }
 /* Scroll down button */
-.scroll-down {
+/* .scroll-down {
 	opacity: 1;
 	-webkit-transition: all 0.5s ease-in 3s;
 	transition: all 0.5s ease-in 5s;
@@ -194,152 +275,25 @@ h1 {
 	  transform: translateY(-5px);
 	}
 }
-/* Landing flexbox div elements */
-.landing-container {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	margin-top: -2em;
-	/* Container border used to view and reposition children */
-	/* border: 3px solid black; */
-}
-.landing-child {
-	height: 550px;
-	width: 700px;
-	margin: 1em;
-	padding: 1em 3em;
-	font-size: 1.4em;
-	line-height: 1.9em;
-}
-.landing-padding-top {
-	padding-top: 2em;
-}
-.landing-child p {
-	text-align: left;
-}
-/* White (#fff) div container elements */
-.white-container {
-	height: 70em;
-	justify-content: center;
-	align-items: center;
-}
-.white-container-h1 {
-	text-align: center;
-	font-weight: 400;
-}
-.white-flex {
-	display: flex;
-	flex-wrap: wrap;
-	margin: auto;
-	padding: 2em 6em 8em;
-	/* border: 3px solid black; */
-}
-.white-child { 
-	flex: 1;
-	flex-grow: 0;
-	flex-shrink: 0;
-	flex-basis: 300px;
-	margin: 50px;
-	margin-top: 25px;
-	margin-bottom: 25px;
-}
-/* Swamp (#001423) flexbox container elements */
-#swamp-container {
-	background-color: #001423;
-	color: white; 
-	height: 70em;
-	padding-top: 3em;
-}
-.swamp-container-h1 {
-	text-align: center;
-	font-family: 'Roboto Serif', serif;
-	font-size: 1.7em;
-	font-weight: 200;
-}
-.swamp-container h2, p {
-	width: 100%;
-	text-align: center;
-	/* border: 3px solid white; */
-}
-.swamp-p {
-	text-align: left;
-	font-size: 1.3em;
-	line-height: 1.5em;
-}
-.swamp-flex {
-	display: flex;
-	flex-wrap: wrap;
-	margin: auto;
-	padding: 2em 6em 8em;
-}
-.swamp-center {
-	width: 100%;
-}
-.swamp-child-left {
-	flex: 50%; 
-	padding-left: 2em;
-	padding-right: 6em;
-	text-align: center;
-	/* border: 3px solid white; */
-}
-.swamp-child-right {
-	flex: 50%; 
-	padding-left: 6em;
-	padding-right: 2em;
-	text-align: center;
-	/* border: 3px solid white; */
-}
-/* Ice blue (#d7e0e5) div container elements */
-.ice-blue-container { 
-	background-color: #d7e0e5;
-	height: 70em;
-	align-items: center;
-}
-.ice-blue-flex {
-	display: flex;
-	flex-wrap: wrap;
-	padding-top: 3em;
-	padding-left: 6em;
-	padding-right: 6em;
-}
-.ice-blue-child-left {
-	flex: 50%; 
-	padding-left: 2em;
-	padding-right: 6em;
-	text-align: center;
-	/* border: 3px solid black; */
-}
-.ice-blue-child-right {
-	flex: 50%; 
-	padding-left: 6em;
-	padding-right: 2em;
-	text-align: center;
-	/* border: 3px solid black; */
-}
-.ice-blue-container h1 {
-	font-weight: 400;
-	text-align: left;
-	margin: 0;
-	padding: 0;
-}
 /* Font Awesome icon styles */
 .fa-white {
 	color: white;
-	font-size: 5em; 
+	font-size: 3em; 
+	padding-left: 3em;
+	padding-bottom: 0.5em;
 }
 .fa-swamp {
-	width: 10%;
-	margin-bottom: 2em;
-	margin-left: 0.1em;
-	padding: 0.1em 0.35em;
-	color: #001423;
-	font-size: 5em;
+	width: 20%;
+	margin-top: 1em;
+	color: var(--clr-primary-900);
+	font-size: 4em;
 	/* border: 3px solid black; */
 }
 .staff-card {
 	min-height: 450px;
 	max-height: 450px;
-	width: 350px;
+	min-width: 200px;
+	max-width: 350px;
 	background-color: white;
 	border-radius: 10px;
 	box-shadow: 0 8px 30px rgba(0,0,0,.3);
@@ -393,7 +347,26 @@ footer {
 	height: 8em; 
 	background-color: #fff;
 }
-@media only screen and (max-width: 768px) {
+@media (min-width: 40em) {
+	section {
+		padding: 7rem 0;
+	}
+	.split {
+		flex-direction: row;
+	}
+	.split > * {
+		flex-basis: 100%;
+	}
+	.split > * + * {
+		margin-left: 6em;
+	}
+}
+@media (min-width: 71.25em) {
+	.container--align {
+		flex-direction: row;
+	}
+}
+@media only screen and (max-width: 820px) {
 	.hamburger {
 		display: block;
 	}
@@ -409,7 +382,7 @@ footer {
 	.nav-menu {
 		position: fixed;
 		right: -100%;
-		top: 7em;
+		top: 6em;
 		gap: 0;
 		flex-direction: column;
 		background-color: #fff;
