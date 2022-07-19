@@ -17,23 +17,35 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/9ee1123c89.js" crossorigin="anonymous"></script>
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script src="script.js"></script>
 </head>
 <body>
 <header>
+	<nav class="navbar">
+		<a href="index.html"><img src="logo.svg" height="70" width="70" alt="Dreslin Consulting Group Logo"></a>
+		<ul class="nav-menu">
+			<li class="nav-item">
+				<a href="index.html" class="nav-link">Home</a>
+			</li>
+			<li class="nav-item">
+				<a href="about.html" class="nav-link">About</a>
+			</li>
+			<li class="nav-item">
+				<a href="services.html" class="nav-link">Services</a>
+			</li>
+			<li class="nav-item">
+				<a href="projects.html" class="nav-link">Projects</a>
+			</li>
+			<li class="nav-item">
+				<button class="button button1 navbutton1 nav-link" onclick="window.location.href='contact.html'">CONTACT</button>
+			</li>
+		</ul>
+		<div class="hamburger">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</div>
+	</nav>
 </header>
-<div id="logo">
-	<a href="index.html"><img src="logo.svg" height="70" width="70" alt="Dreslin Consulting Group Logo"></a>
-</div>
-<nav>
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="about.html">About</a></li>
-		<li><a href="services.html">Services</a></li>
-		<li><a href="projects.html">Projects</a></li>
-		<li><button class="button button1 navbutton1" onclick="window.location.href='contact.html'">CONTACT</button></li>
-	</ul>
-</nav>
 <main>
 	<div class="landing-container white-container">
 		<h1 class="center reveal-landing">We are Dreslin Consulting Group.</h1>
@@ -45,7 +57,7 @@
 			<p>Our team unites psychology with coding to deliver solutions that fix design problems found in the real world. We aim to provide an intuitive 
 			and robust digital design to the client that will help them visualize, explain, and showcase their product.</p>
 		</div>
-		<a href="#swamp-container" class="scroll-down" address="true"></a>
+		<a href="#swamp-container" class="scroll-down"></a>
 	</div>
 	<div id="swamp-container" class="swamp-flex">
 		<div class="swamp-center reveal">
@@ -131,7 +143,7 @@
 			<h1>Have questions or projects? Connect with us here.</h1>
 		</div>
 		<div class="ice-blue-child-right reveal">
-			<img src="rectangle.png" height="300" width="600" alt="Placeholder" class="img-resize cover"></a>
+			<img src="rectangle.png" height="300" width="600" alt="Placeholder" class="img-resize cover">
 		</div>
 		<i class="fa-brands fa-facebook-square fa-swamp reveal"></i>
 		<i class="fa-brands fa-instagram-square fa-swamp reveal"></i>
@@ -142,5 +154,7 @@
 <footer>
 
 </footer>
+<script src="script.js"></script>
+</script>
 </body>
 </html>
