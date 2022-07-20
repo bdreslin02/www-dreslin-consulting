@@ -4,6 +4,8 @@
 	--clr-primary-300: #d7e0e5; 
 	--clr-primary-900: #001423;
 
+	--clr-accent-400: #646464;
+
 	--ff-heading: 'Roboto Serif', serif; 
 	--ff-body: 'Roboto', serif;
 
@@ -73,6 +75,20 @@ h2 {
 img {
 	display: block;
 	max-width: 100%;
+}
+/* Hyperlink styles */
+.link {
+	text-decoration: none;
+	border-bottom: 2px solid #c4c4c4;
+	padding-bottom: 0.04rem;
+}
+.link:link, 
+.link:visited {
+	color: var(--clr-neutral-100);
+}
+.link:hover {
+	border-bottom: 2px solid #646464;
+	transition: 0.7s ease;
 }
 
 /* Background & text color section styles */
@@ -226,6 +242,8 @@ nav a.current {
 .cover {
 	object-fit: cover;
 } */
+
+/* Reveal on scroll */
 .reveal {
 	position: relative;
 	transform: translateY(150px);
@@ -346,22 +364,24 @@ nav a.current {
 	float: right;
 	opacity: .1;
 	transform: rotate(10deg) translate(-10px, -40px);
-   	color:#4D3FA3;
+   	color:var(--clr-accent-400);
   }
 .person {
-	color: white;
+	color: var(--clr-neutral-100);
+	min-width: 100%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -100%);
+	margin-top: 1rem;
 	font-size: 1.3rem;
 	font-weight: 300;
+	text-align: center;
 }
 
 /* Footer */
 footer {
-	height: 8em; 
-	background-color: #fff;
+	min-height: 7rem; 
 }
 
 /* Active media queries */
