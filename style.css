@@ -383,6 +383,39 @@ nav a.current {
 footer {
 	min-height: 7rem; 
 }
+footer ul {
+	margin-top: 0; 
+	margin-bottom: 0;
+	padding-top: 2rem;
+	list-style: none;
+	font-size: 0.9rem;
+	line-height: 1.6;
+	text-align: center;
+}
+footer ul li {
+	display: inline-block;
+	padding: 0 0.4rem; 
+}
+footer ul li a {
+	text-decoration: none;
+	transition: 0.7s ease;
+}
+footer ul li a:link {
+	color: var(--clr-primary-900);
+}
+footer ul li a:visited {
+	color: var(--clr-primary-900);
+}
+footer ul li a:hover,
+footer ul li a:focus {
+	color: #c4c4c4;
+}
+footer .copyright {
+	margin-top: 0.5rem;
+	text-align: center;
+	font-size: 0.7rem;
+	
+}
 
 /* Active media queries */
 @media (min-width: 40em) {
