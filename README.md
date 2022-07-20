@@ -34,7 +34,16 @@ All icons courtesy of [Font Awesome Icons](https://fontawesome.com/)
 ### Custom Properties
 ***
 IN ROOT
-- 
+- --clr-neutral-100
+- --clr-primary-300
+- --clr-primary-900
+- --clr-accent-400
+- --ff-heading
+- --ff-body
+- --fw-heading-light
+- --fw-body-light
+- --fs-h1
+- --fs-h2
 ## Technologies
 - [Visual Studio Code](https://code.visualstudio.com/Download): Version 1.68
 - [Git](https://git-scm.com/): Version 2.37.0
