@@ -90,7 +90,7 @@ img {
 .center-img {
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;
+	width: 100%;
 }
 /* Hyperlink styles */
 .bg-dark-link {
@@ -475,6 +475,9 @@ footer .copyright {
 	}
 }
 @media (min-width: 71.25em) {
+	.center-img {
+		width: 50%;
+	}
 	.container--align {
 		flex-direction: row;
 	}
