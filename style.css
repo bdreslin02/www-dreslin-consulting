@@ -291,17 +291,6 @@ nav a.current {
 	z-index: -1;
 }
 
-/* .paragraph {
-	display: block;
-	margin-left: 30em;
-	margin-right: 30em;
-	font-size: 1.4em;
-	line-height: 1.9em;
-}
-.cover {
-	object-fit: cover;
-} */
-
 /* Reveal on scroll */
 .reveal {
 	position: relative;
@@ -647,15 +636,18 @@ nav a.current {
 }
 .col-sm-4:nth-child(1) .card,
 .col-sm-4:nth-child(1) .card .title .fa {
-	background: linear-gradient(-45deg,#f403d1,#64b5f6);
+	background: rgb(215,224,229);
+	background: linear-gradient(0deg, rgba(215,224,229,1) 0%, rgba(0,20,35,1) 100%);
 }
 .col-sm-4:nth-child(2) .card,
 .col-sm-4:nth-child(2) .card .title .fa {
-	background: linear-gradient(-45deg,#ffec61,#f321d7);
+	background: rgb(0,20,35);
+	background: linear-gradient(0deg, rgba(0,20,35,1) 0%, rgba(215,224,229,1) 100%);
 }
 .col-sm-4:nth-child(3) .card,
 .col-sm-4:nth-child(3) .card .title .fa {
-	background: linear-gradient(-45deg,#24ff72,#9a4eff);
+	background: rgb(215,224,229);
+	background: linear-gradient(0deg, rgba(215,224,229,1) 0%, rgba(0,20,35,1) 100%);
 }
 .card::before {
 	content: '';
