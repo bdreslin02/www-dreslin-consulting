@@ -12,8 +12,11 @@
 	--fw-heading-light: 400;
 	--fw-body-light: 300;  
 
-	--fs-h1: 3rem; 
-	--fs-h2: 1.5rem; 
+	--fs-h1: clamp(1rem, 3vw + 0.5rem, 3rem); 
+	--fs-h2: clamp(0.5rem, 3vw + 0.5rem, 1.5rem);
+	--fs-p: clamp(0.5rem, 1.5vw + 0.5rem, 1.3125rem);
+	--fs-h3-small: clamp(0.2rem, 1.5vw + 0.5rem, 1rem);
+	--fs-icons: clamp(2rem, 3vw + 0.5rem, 4rem);
 }
 
 /* Global styling */
@@ -27,7 +30,7 @@
 body {
 	font-family: var(--ff-body);
 	font-weight: 400;
-	font-size: 1.3125rem;
+	font-size: var(--fs-p);
 	line-height: 1.6;
 }
 html, body {
@@ -66,6 +69,9 @@ h2 {
 .text-fs-h2 {
 	font-size: var(--fs-h2);
 }
+.small-h3 {
+	font-size: var(--fs-h3-small);
+}
 .heading-thin {
 	font-weight: var(--fw-heading-light);
 }
@@ -73,7 +79,7 @@ h2 {
 	font-weight: var(--fw-body-light);
 }
 .body-large {
-	font-size: 1.5rem;
+	font-size: var(--fs-h2)
 }
 .body-ff-h1 {
 	font-family: var(--ff-heading);
@@ -93,6 +99,10 @@ img {
 	display: block;
 	max-width: 100%;
 	object-fit: cover;
+}
+.mask-img {
+	-webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+	mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
 }
 .center-img {
 	margin-left: auto;
@@ -184,6 +194,7 @@ section {
 	margin: 50px;
 	margin-top: 25px;
 	margin-bottom: 25px;
+	margin-inline: auto;
 	/* border: 3px solid green; */
 }
 
@@ -245,7 +256,7 @@ nav a.current {
 	height: 3px;
 	margin: 5px auto;
 	transition: all 0.3s ease-in-out;
-	background-color: #001423;
+	background-color: var(--clr-primary-900);
 }
 
 /* Button styles */
@@ -253,7 +264,7 @@ nav a.current {
 	border: none;
 	border-radius: 3px; 
 	padding: 0.65em 1.1em;
-	color: white;
+	color: var(--clr-neutral-100);
 	text-align: center;
 	text-decoration: none;
 	font-size: 15px;
@@ -264,7 +275,7 @@ nav a.current {
 }
 .button1:hover, 
 .button1:focus {
-	color: #c4c4c4
+	color: #c4c4c4;
 }	
 .navbutton1 {
 	margin-top: -2em;  
@@ -365,10 +376,10 @@ nav a.current {
 	padding-bottom: 0.5em;
 }
 .fa-swamp {
-	width: 20%;
-	margin-top: 1em;
 	color: var(--clr-primary-900);
-	font-size: 4em;
+	font-size: var(--fs-icons);
+	padding-left: 0.15em;
+	padding-right: 0.05em;
 	/* border: 3px solid black; */
 }
 .staff-card {
