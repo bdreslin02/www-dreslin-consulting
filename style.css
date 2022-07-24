@@ -217,7 +217,8 @@ section {
 	margin-inline: auto;
 	/* border: 3px solid green; */
 }
-hr {
+hr, 
+.press-container {
 	width: 40.625rem;
     max-width: 100%;
     margin: 1.25rem auto 1.563rem auto;
