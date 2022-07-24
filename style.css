@@ -502,6 +502,8 @@ nav a.current {
 	padding-right: 0.05em;
 	/* border: 3px solid black; */
 }
+
+/* Staff cards */
 .staff-card {
 	min-height: 450px;
 	max-height: 450px;
@@ -524,8 +526,8 @@ nav a.current {
 	height: 125px;
 	width: 120px;
 	border-radius: 50%;
-	border: 5px solid white;
-	background: no-repeat center/cover url(headshot.png);
+	border: 5px solid var(--clr-neutral-100);
+	background: no-repeat center/cover url(images/headshot.png);
 	position: absolute;
 	top: -65%;
 	left: 50%;
@@ -755,31 +757,16 @@ nav a.current {
 	position: relative;
 	width: 300px;
 	height: auto;
-	background: linear-gradient(-45deg,#fe0847,#feae3f);
+	background-color: var(--clr-primary-900);
 	border-radius: 15px;
 	margin: 0 auto;
 	padding: 40px 20px;
 	box-shadow: 0 10px 15px rgba(0,0,0,.1) ;
-  	transition: .5s;
+  	transition: 0.7s;
   	/* border: 3px solid green; */
 }
 .card:hover {
 	transform: scale(1.1);
-}
-.col-sm-4:nth-child(1) .card,
-.col-sm-4:nth-child(1) .card .title .fa {
-	background: rgb(215,224,229);
-	background: linear-gradient(0deg, rgba(215,224,229,1) 0%, rgba(0,20,35,1) 100%);
-}
-.col-sm-4:nth-child(2) .card,
-.col-sm-4:nth-child(2) .card .title .fa {
-	background: rgb(0,20,35);
-	background: linear-gradient(0deg, rgba(0,20,35,1) 0%, rgba(215,224,229,1) 100%);
-}
-.col-sm-4:nth-child(3) .card,
-.col-sm-4:nth-child(3) .card .title .fa {
-	background: rgb(215,224,229);
-	background: linear-gradient(0deg, rgba(215,224,229,1) 0%, rgba(0,20,35,1) 100%);
 }
 .card::before {
 	content: '';
@@ -1038,5 +1025,3 @@ footer .copyright {
 		right: 0; 
 	}
 }
-
-/*  Inactive media queries */
