@@ -422,6 +422,18 @@ nav a.current {
 	opacity: 1;
 }
 
+.load-in {
+	animation: transitionIn 1s;
+}
+@keyframes transitionIn {
+	from {
+		transform: translateY(20%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
 /* Scroll down button */
 /* .scroll-down {
 	opacity: 1;
