@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Interface Design Concept ERAU</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="logo-colored.svg" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/9ee1123c89.js" crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar">
+			<img src="logo-transparent.svg" height="55" width="55" alt="Dreslin Consulting Group Logo">
+			<ul class="nav-menu">
+				<li class="nav-item">
+					<a href="index.html" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="about.html" class="nav-link">About</a>
+				</li>
+				<li class="nav-item">
+					<a href="services.html" class="nav-link">Services</a>
+				</li>
+				<li class="nav-item">
+					<a href="projects.html" class="nav-link">Projects</a>
+				</li>
+				<li class="nav-item">
+					<button class="button button1 navbutton1 nav-link" onclick="window.location.href='contact.html'">CONTACT</button>
+				</li>
+			</ul>
+			<div class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+		</nav>
+	</header>
+
+    <main>
+        <section class="bg-accent-offwhite">
+            <div class="container container--margin">
+                <p class="small-h3 text-center">Embry-Riddle Aeronautical University</p>
+                <h1 class="heading-thin text-center">eHMI conceptual design</h3>
+                <div class="press-container">
+                    <p>Across the globe, an estimated 14 million semi-autonomous vehicles were on the road in 2020. But how do vehicles that require little input by the human driver navigate primarily-human tasks such as determining if the vehicle or pedestrians crosses first at an intersection? For this problem, we designed a new external human-machine interface that incorporates visual and audio cueing to communicate between human and computer.</p>
+                    <hr>
+                    <div class="split">
+                        <div class="reveal">
+                            <h2 class="small-h3 heading-thin">Affiliation:</h2>
+                            <p>Embry-Riddle Aeronautical University</p>
+                            <h2 class=" small-h3 heading-thin">Target medium:</h2>
+                            <p>Digital</p>
+                        </div>
+                        <div class="reveal">
+                            <h2 class=" small-h3 heading-thin">Project period:</h2>
+                            <p>6 weeks</p>
+                            <h2 class=" small-h3 heading-thin">Team members:</h2>
+                            <p>5</p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </section>
+        <section class="bg-accent-grey">
+            <div class="container">
+                <div class="split">
+                    <div class="reveal">
+
+                    </div>
+                    <div class="reveal">
+                        <h2 class="heading-thin body-ff-h1">The challenge</h2>
+                        <p>Level 2 autonomous vehicles do not currently have a streamlined communication system in place to communicate to other road users, including other drivers, pedestrians, and construction workers. This meant that it was necessary for us to analyze the human factors and kinesiology of the existing communication system between drivers and road users. Based on our findings, we designed a system that mimicked these natural processes and adapted them for a computer system.</p>
+                    </div>
+                </div>
+                <div class="container--margin--short reveal">
+                    <div class="press-container">
+                        <h2 class="heading-thin body-ff-h1">The solution</h2>
+                        <p>Our conceptual design incorporates a cohesive system of three AI vision cameras, a combination LED message board and projector housing mounted on the grille, speakers mounted on the A-pillars and front grille, and an adaptive tone signaling component.</p>
+                    </div>
+                </div>
+                <div class="container--margin--short">
+                    <div class="split">
+                        <div class="reveal">
+                            <h2 class="heading-thin body-ff-h1">AI vision cameras</h2>
+                            <p>The cameras will work in conjunction with onboard maps to identify an intersection. Several algorithms have proven reliable in visually detecting intersections, but the inclusion of onboard maps to crosscheck the information acquired is a redundancy. Once the vehicle has stopped at the intersection, each camera will visually scan for pedestrians.</p>
+                        </div>
+                        <div class="reveal">
+                            <img src="av-cameras.png" height="300" width="" alt="AI vision cameras sketch" class="center-img img-resize drop-shadow cover reveal">
+                        </div>
+                    </div>
+                </div>
+                <div class="container--margin--short">
+                    <div class="split">
+                        <div class="reveal">
+                            <img src="av-id.png" height="" width="" alt="LED message board sketch" class="center-img img-resize drop-shadow cover reveal">
+                        </div>
+                        <div class="reveal">
+                            <h2 class="heading-thin body-ff-h1">LED message board & projector</h2>
+                            <p>Our system will utilize the pedestrian first approach: the vehicle will always defer to the pedestrian, allowing them to cross first. To convey this information, our message board will display an animated pedestrian walking across a digital crosswalk. Simple words like “cross,” “stop,” or “wait” could be used either to replace or in conjunction with the animated graphics.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container--margin--short">
+                    <div class="split">
+                        <div class="reveal">
+                            <h2 class="heading-thin body-ff-h1">Speakers</h2>
+                            <p>To complement the visual components &mdash; and to include all segments of the population &mdash; auditory components will supplement the other design features. The design utilizes speakers mounted in both A-pillars and the front grille that will augment visual statements with verbal cues.</p>
+                        </div>
+                        <div class="reveal">
+                            <img src="av-speakers.png" height="" width="" alt="AI vision cameras sketch" class="center-img img-resize drop-shadow cover reveal">
+                        </div>
+                    </div>
+                </div>
+                <div class="container--margin--short">
+                    <div class="split">
+                        <div class="reveal">
+                            <img src="av-approach.png" height="" width="" alt="Adaptive Tone Signaling sketch" class="center-img img-resize drop-shadow cover reveal">
+                        </div>
+                        <div class="reveal">
+                            <h2 class="heading-thin body-ff-h1">Adaptive Tone Signaling</h2>
+                            <p>As the vehicle approaches an intersection, the speakers will emit quick bursts of beeps, increasing in speed as the vehicle slows down. A quick, but not panic&ndash;inducing pattern will ensure that the visually&ndash;impaired population can recognize vehicle presence. Once the AV comes to a complete stop, the tone signaling will cease, allowing the computer voice to guide the pedestrian on how to proceed.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container--margin--short reveal">
+                    <div class="press-container">
+                        <h2 class="heading-thin body-ff-h1">Want to read more?</h2>
+                        <p><a href="https://drive.google.com/file/d/1E34hLJty_lUpr3stowHgK_8M9SwHqO7o/view?usp=sharing" class="bg-light-link">Read our paper here</a></p>
+                    </div>
+                </div>
+            </div>
+            <hr class="reveal">
+            <div class="container--align">
+                <div class="container--child">
+                    <h3 class="heading-thin text-center reveal">Have questions or projects?</h3>
+                    <i class="fa-brands fa-facebook-square fa-swamp reveal"></i>
+                    <i class="fa-brands fa-instagram-square fa-swamp reveal"></i>
+                    <i class="fa-brands fa-twitter-square fa-swamp reveal"></i>
+                    <i class="fa-brands fa-linkedin fa-swamp reveal"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark">
+            <div class="container reveal">
+                <h2 class="heading-thin text-center">SEE THE NEXT CASE STUDY:</h2>
+				<p class="body-ff-h2 body-large text-center">A Fisherman's Life project website</p>
+                <div class="center-con">
+                    <div class="round">
+                        <div id="cta">
+                            <span class="arrow primera next" onclick="location.href='#'"></span>
+                            <span class="arrow segunda next" onclick="location.href='#'"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+	</main>
+
+	<footer>
+		<ul>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+			<li>
+				<p>&#124;</p>
+			</li>
+			<li>
+				<a href="press.html">Press</a>
+			</li>
+			<li>
+				<p>&#124;</p>
+			</li>
+			<li>
+				<a href="imprint.html">Imprint</a>
+			</li>
+			<li>
+				<p>&#124;</p>
+			</li>
+			<li>
+				<a href="privacy.html">Privacy Policy</a>
+			</li>
+		</ul>
+		<p class="copyright">
+			Copyright &copy; 2022 Dreslin Consulting Group, LLC
+		</p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
