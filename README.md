@@ -2,13 +2,18 @@
 All script and media files required for my business website 
 All content ideas, elements, structure, and implementation are licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). Third parties may *NOT* copy or otherwise imitate content for commercial purposes or for profit. 
 ## Status
-- As of 07/17/2022: Draft
+- As of 07/24/2022: Ready for deployment
 ## Website Structure
 1. Index
 2. About
 3. Services
 4. Projects
 5. Contact
+6. Interface Design Concept ERAU
+7. A Fisherman's Life Project Website
+8. Press
+9. Imprint
+10. Privacy Policy
 ## Elements
 ### Color Scheme
 ***
@@ -16,6 +21,8 @@ All content ideas, elements, structure, and implementation are licensed under th
 - #d7e0e5
 - #c4c4c4
 - #fff
+- #f7f7f7
+- #e4e4e4
 ### Fonts
 ***
 - H1: [Roboto Serif, serif](https://fonts.google.com/specimen/Roboto)
@@ -37,6 +44,8 @@ IN ROOT
 - --clr-neutral-100
 - --clr-primary-300
 - --clr-primary-900
+- --clr-accent-200
+- --clr-accent-300
 - --clr-accent-400
 - --ff-heading
 - --ff-body
@@ -44,6 +53,14 @@ IN ROOT
 - --fw-body-light
 - --fs-h1
 - --fs-h2
+- --fw-heading-light
+- --fw-body-light 
+- --fs-h1
+- --fs-h2
+- --fs-p
+- --fs-h3-small
+- --fs-icons
+- --lh-short
 ## Technologies
 - [Visual Studio Code](https://code.visualstudio.com/Download): Version 1.68
 - [Git](https://git-scm.com/): Version 2.37.0
