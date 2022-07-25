@@ -160,6 +160,9 @@ img {
 	border-bottom: 2px solid #646464;
 	transition: 0.7s ease;
 }
+i {
+	cursor: pointer;
+}
 
 /* Background & text color section styles */
 .bg-light {
