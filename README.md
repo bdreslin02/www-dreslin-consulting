@@ -2,7 +2,10 @@
 All script and media files required for my business website 
 All content ideas, elements, structure, and implementation are licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). Third parties may *NOT* copy or otherwise imitate content for commercial purposes or for profit. 
 ## Status
-- As of 07/24/2022: Deployed on [Netlify](https://www.dreslinconsult.com/)
+- As of 08/16/2022: Deployed on [Netlify](https://www.dreslinconsult.com/)
+- Current production deployment: master@af1f45b
+## Contact Form Spam Prevention
+- Form submissions are filtered for spam using a combination of [Akismet](https://akismet.com/), a honeypot field, and a reCAPTCHA 2 challenge. Prevention technologies provided by Netlify API.
 ## Website Structure
 1. Index
 2. About
@@ -60,7 +63,7 @@ IN ROOT
 - --fs-p
 - --fs-h3-small
 - --fs-icons
-- --lh-short
+- --lh-short 
 ## Technologies
 - [Visual Studio Code](https://code.visualstudio.com/Download): Version 1.68
 - [Git](https://git-scm.com/): Version 2.37.0
