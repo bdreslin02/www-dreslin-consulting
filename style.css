@@ -245,7 +245,7 @@ hr,
 
 /* Navigation elements */
 header {
-	background-color: #fff;
+	background-color: var(--clr-neutral-100);
 	position: fixed;
 	top: 0; 
 	width: 100%;
@@ -270,7 +270,7 @@ header {
 	transition: 0.7s ease;
 }
 .nav-link:hover {
-	color: #c4c4c4
+	color: #c4c4c4;
 }
 .hamburger {
 	display: none; 
@@ -281,12 +281,12 @@ nav li {
 	font-size: 1.2rem;
 }
 nav a { 
-	color: #001423;
+	color: var(--clr-primary-900);
 	text-decoration: none; 
 
 }
 nav a:visited {
-	color: #001423;
+	color: var(--clr-primary-900);
 }
 nav a:active {
 	border-bottom: 2px solid #c4c4c4;
@@ -316,7 +316,7 @@ nav a.current {
 	cursor: pointer; 
 }
 .button1 { 
-	background-color: #001423; 
+	background-color: var(--clr-primary-900); 
 }
 .button1:hover, 
 .button1:focus {
@@ -344,14 +344,14 @@ nav a.current {
 }
 .round {
     position: absolute;
-    border: 2px solid #fff;
+    border: 2px solid var(--clr-neutral-100);
     width: 40px;
     height: 40px;
     border-radius: 100%;
 	cursor: pointer;
 }
 #cta {
-    width:100%; 
+    width: 100%; 
 	cursor: pointer; 
 	position: absolute;
 }
@@ -366,7 +366,7 @@ nav a.current {
 	width: 12px; 
 	height: 12px; 
 	background-size: contain; 
-	top:15px;
+	top: 15px;
 }
 .segunda {
 	margin-left: 8px;
@@ -430,7 +430,6 @@ nav a.current {
 	transform: translateY(0);
 	opacity: 1;
 }
-
 .load-in {
 	animation: transitionIn 1s;
 }
@@ -445,7 +444,7 @@ nav a.current {
 
 /* Font Awesome icon styles */
 .fa-white {
-	color: white;
+	color: var(--clr-neutral-100);
 	font-size: 3em; 
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
@@ -463,12 +462,12 @@ nav a.current {
 	min-height: 450px;
 	max-height: 450px;
 	max-width: 350px;
-	background-color: white;
+	background-color: var(--clr-neutral-100);
 	border-radius: 10px;
 	box-shadow: 0 8px 30px rgba(0,0,0,.3);
 	display: flex;
 	flex-flow: column;
-	justify-content:space-between;
+	justify-content: space-between;
 }
 .text {
 	padding: 2.2em;
@@ -490,7 +489,7 @@ nav a.current {
 	display: flex;
 }
 .footer {
-	background-color: #001423;
+	background-color: var(--clr-primary-900);
 	height: 140px;
 	border-radius: 0 0 10px 10px;
 	position: relative;
@@ -575,7 +574,7 @@ nav a.current {
 /* Testimonial carousel: First */
 #t-1:checked ~ .dots label[for="t-1"] {
 	transform: scale(2);
-	background-color: #fff;
+	background-color: var(--clr-neutral-100);
 }
 #t-1:checked ~ .dots label[for="t-2"] {
 	transform: scale(1.5);
@@ -604,7 +603,7 @@ nav a.current {
 }
 #t-2:checked ~ .dots label[for="t-2"] {
 	transform: scale(2);
-	background-color: #fff;
+	background-color: var(--clr-neutral-100);
 }
 #t-2:checked ~ .dots label[for="t-3"] {
 	transform: scale(1.5);
@@ -632,7 +631,7 @@ nav a.current {
 }
 #t-3:checked ~ .dots label[for="t-3"] {
 	transform: scale(2);
-	background-color: #fff;
+	background-color: var(--clr-neutral-100);
 }
 #t-3:checked ~ .dots label[for="t-4"] {
 	transform: scale(1.5);
@@ -659,7 +658,7 @@ nav a.current {
 }
 #t-4:checked ~ .dots label[for="t-4"] {
 	transform: scale(2);
-	background-color: #fff;
+	background-color: var(--clr-neutral-100);
 }
 #t-4:checked ~ .dots label[for="t-5"] {
 	transform: scale(1.5);
@@ -686,7 +685,7 @@ nav a.current {
 }
 #t-5:checked ~ .dots label[for="t-5"] {
 	transform: scale(2);
-	background-color: #fff;
+	background-color: var(--clr-neutral-100);
 }
 #t-5:checked ~ .testimonials label[for="t-1"] {
 	transform: translateX(-1200px) translateZ(-360px) rotateY(45deg);
@@ -734,7 +733,7 @@ nav a.current {
 	transform: skewY(-5deg) scale(1.5);
 }
 .title .fa {
-	color:#fff;
+	color: var(--clr-neutral-100);
 	font-size: 60px;
 	width: 100px;
 	height: 100px;
@@ -747,7 +746,7 @@ nav a.current {
 	position: relative;
 	margin: 20px  0 0;
 	padding: 0;
-	color: #fff;
+	color: var(--clr-neutral-100);
 	font-size: 28px;
    	z-index: 2;
 }
@@ -759,7 +758,7 @@ nav a.current {
 .price h4 {
 	margin: 0;
 	padding: 20px 0 ;
-	color: #fff;
+	color: var(--clr-neutral-100);
 	font-size: 60px;
 }
 .option ul {
@@ -770,13 +769,13 @@ nav a.current {
 	margin: 0 0 10px;
 	padding: 0;
 	list-style: none;
-	color: #fff;
+	color: var(--clr-neutral-100);
 	font-size: 16px;
 }
 .card a {
 	position: relative;
 	z-index: 2;
-	background: #fff;
+	background: var(--clr-neutral-100);
 	color : black;
 	width: 150px;
 	height: 40px;
@@ -970,7 +969,7 @@ footer .copyright {
 		top: 5.2em;
 		gap: 0;
 		flex-direction: column;
-		background-color: #fff;
+		background-color: var(--clr-neutral-100);
 		width: 100%;
 		text-align: center;
 		transition: 1s ease;
