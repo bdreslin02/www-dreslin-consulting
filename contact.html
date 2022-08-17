@@ -57,7 +57,7 @@
 			<div class="container container--margin--short load-in">
 				<h1 class="heading-thin text-center">Have questions or projects?</h1>
 				<p class="text-center">We'd love to hear from you! We'll get back to you in one day or less. All information is required.</p>
-				<form name="Contact" method="POST" data-netlify="true">
+				<form name="Contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
 					<div class="row input-container">
 						<div class="col-md-6 col-sm-12">
 							<div class="styled-input">
@@ -92,6 +92,7 @@
 						<div class="col-xs-12">
 							<input type="submit" value="Send" name="submit" id="submit" class="button button1">
 						</div>
+						<div data-netlify-recaptcha="true"></div>
 					</div>
 				</form>
 				<hr>
