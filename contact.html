@@ -57,7 +57,12 @@
 			<div class="container container--margin--short load-in">
 				<h1 class="heading-thin text-center">Have questions or projects?</h1>
 				<p class="text-center">We'd love to hear from you! We'll get back to you in one day or less. All information is required.</p>
-				<form name="Contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+				<form name="Contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
+					<p class="hidden">
+						<label>
+							Don't fill this out if you're human: <input name="bot-field" />
+						</label>
+					</p>
 					<div class="row input-container">
 						<div class="col-md-6 col-sm-12">
 							<div class="styled-input">

@@ -41,6 +41,9 @@ html, body {
 	background-color: var(--clr-neutral-100);
 	scroll-behavior: smooth;
 }
+.hidden {
+	display: none;
+}
 
 /* Reset typography margins */
 body, 
